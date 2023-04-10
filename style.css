@@ -1,0 +1,235 @@
+/* Colors to use */
+/* #c - red */
+/* #DDF7E3 - light */
+/* #C7E8CA - darker */
+/* #5D9C59 - green */
+/* #121212 - black */
+/* #4c5c5c - logo green */
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+  }
+
+  html{
+    background-color: #121212;
+  }
+  
+  body {
+    font-family: Arial, sans-serif;
+  }
+  
+  header {
+    background-color: #121212;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100px;
+    opacity: .875;
+    border-bottom: 0.5px solid #4c5c5c;
+  }
+  
+  header img {
+    height: 80%;
+  }
+  
+  main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  /* Promo banner  */
+  
+  .promo-banner {
+    background-image: url("images/noodle-bowl-black-background-dark-theme-food-photography-111843193.jpeg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.8;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    text-align: center;
+    padding: 50px;
+    margin-bottom: 30px;
+    border-radius: 1rem;
+    width: 100%;
+    box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+    border: .5px solid #fff;
+  }
+  
+  .promo-banner h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .promo-banner p {
+    font-size: 1.5em;
+    margin-bottom: 20px;
+  }
+  
+  .promo-banner button {
+    background-color: #333;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2em;
+    border-radius: 5px;
+  }
+
+  .promo-banner-left{
+    color: #fff;
+    text-align: left;
+  }
+
+  /* MAIN CONTENT */
+  
+  .content {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+
+  @media screen and (max-width: 768px) {
+    .content {
+      flex-direction: column;
+    }
+    .column {
+      margin: 1rem 0;
+    }
+  }
+  
+  .column {
+    flex-basis: 30%;
+    text-align: center;
+    border: .5px solid #fff;
+    border-radius: 1rem;
+    cursor: pointer;
+    color: #fff;
+    opacity: 0.875;
+    background-color: inherit;
+    background-color: #141414;
+  }
+  .column:hover{
+    transition: ease-in-out 0.2s;
+    transform: scale(1.0125);
+  }
+
+  .column h2 {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    padding: .5rem;
+    font-weight: 400;
+    text-align: left;
+    padding-left: 1.5rem;
+  }
+
+  .column p {
+    font-size: 1rem;
+    font-weight: 100;
+    opacity: 0.875;
+    /* padding: 0.5rem 1.5rem; */
+    padding: 0 1.5rem 2rem 1.5rem;
+    text-align: left;
+    line-height: 1.5rem;
+  }
+
+  .column-image{
+    height: 300px;
+    width: 100%;
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+    margin: 0 auto;
+    margin-bottom: 1rem;
+  }
+
+/* Navigation bar */
+
+nav{
+    margin: 2rem 0;
+  }
+  
+.navigation{
+    display: flex;
+    flex-direction: row;
+    gap: 1rem;
+    list-style: none;
+    justify-content: center;
+}
+
+.navigation li {
+    font-size: 1.2rem;
+    letter-spacing: .4rem;
+    font-weight: 400;
+    font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    cursor: pointer;
+    text-transform: uppercase;
+    color: #fff;
+    opacity: .7;
+    text-align: center;
+}
+
+.navigation li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation li:hover {
+    color: #4c5c5c;
+    transition: ease-in-out 0.2s;
+    opacity: 1;
+    animation: hover-effect 0.5s ease-in-out;
+}
+
+.navigation li a:hover {
+  color: #4c5c5c;
+  transition: ease-in-out 0.2s;
+  opacity: 1;
+  animation: hover-effect 0.5s ease-in-out;
+}
+
+@media screen and (max-width: 768px) {
+  .navigation {
+    flex-direction: column;
+    gap: 1.5rem;
+  }
+}
+
+/* Footer */
+
+footer{
+  align-items: center;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 1rem;
+  color: #fff;
+  font-weight: 100;
+  opacity: 0.875;
+}
+
+.footer-col1 {
+  width: 2rem;
+  height: 3rem;
+}
+
+.footer-col1 img {
+  height: 100%;
+  width: 100%;
+}
+
+@keyframes hover-effect {
+    0% {
+        transform: scale(1);
+    }
+    50% {
+        transform: scale(1.1);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
